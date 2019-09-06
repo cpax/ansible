@@ -512,7 +512,8 @@ EXAMPLES = r'''
 
 - name: Disable a task that already exists
   win_scheduled_task:
-    name: TaskToDisable
+    name: ServerManager
+    path: '\Microsoft\Windows\Server Manager'
     enabled: no
 
 - name: Create a task that will be repeated every minute for five minutes
